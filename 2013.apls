@@ -1,0 +1,5 @@
+⍝ 1: Seems a Bit Odd To Me
+{(2×⍳⍵)-1}
+⍝ 2: Making The Grade
+{100×(+/⍵≥65)÷≢⍵}
+
