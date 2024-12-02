@@ -7,3 +7,5 @@
 ⍝ 4: Keeping Things In Balance
 ⍝ This is a mess. I need to improve it.
  {((+/1=⍵)=(+/2=⍵))∧⍵[⍋⍵]≡⍵}{(('('=⍵)+(')'=⍵)×2)~0}
+⍝ 5: Identity Crisis
+{⍵ ⍵⍴1,⍵⍴0}
