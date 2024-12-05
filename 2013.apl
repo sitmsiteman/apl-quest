@@ -22,3 +22,7 @@
 ⍝ To deal with ⍳0 and ¯1.797693135E308, I can use
 ⍝ 0∊⍴⍵:0 ⋄ .. (if empty, return 0. Else, ...)
     {0∊⍴⍵:0⋄⌈/,⍵-⌊/,⍵}
+⍝ 7: Float Your Boat
+    {((~=∘⌈⍨¨,⍵)×(⍉,⍵))~0}
+⍝ reduce left function and use mask
+    {(~=∘⌈⍨(⊢×⍉)⍵)/⍵}
