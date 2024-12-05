@@ -26,3 +26,5 @@
     {((~=∘⌈⍨¨,⍵)×(⍉,⍵))~0}
 ⍝ reduce left function and use mask
     {(~=∘⌈⍨(⊢×⍉)⍵)/⍵}
+⍝ 8: Go Forth And Multiply
+    {×/¨(⍵ ⍵ ⍴ ⍳⍵,⍵)}
