@@ -29,7 +29,7 @@
 ⍝ 8: Go Forth And Multiply
     {×/¨(⍵ ⍵ ⍴ ⍳⍵,⍵)}
 ⍝ 9: It Is a Moving Experience
-⍝ messy long solution
+⍝ messy long solution (not so APL-like)
     ((((≢⍵)-⍺-1)(≢⍵)⍴(⍺⍴1),((≢⍵)-⍺-1)⍴0)+.×⍵)÷⍺
 ⍝ or just use reduce first (⌿)
     {(⍺(+⌿)⍵)÷⍺}
@@ -37,3 +37,8 @@
 ⍝     g is dyadic ÷ and h is dyadic ⊣, so
 ⍝     we can just use 3-train (⍺ (f g h) ⍵) here.
     (+⌿÷⊣)
+⍝ 10: Solution Salvation
+⍝ we can just multiply inverse matrix.
+    {(⌹⍵)+.×⍺}
+⍝ or use matrix divide...
+    ⌹
